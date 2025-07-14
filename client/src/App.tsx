@@ -1,7 +1,7 @@
-import './App.css'
-import { SocketProvider } from './provider/SocketProvider'
-import { GameProvider } from './provider/GameProvider'
-import Lobby from './components/Lobby'
+import "./App.css";
+import { SocketProvider } from "./provider/SocketProvider";
+import { GameProvider } from "./provider/GameProvider";
+import Lobby from "./components/Lobby";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <Lobby />
       </GameProvider>
     </SocketProvider>
-  )
+  );
 }
 
 export default App;

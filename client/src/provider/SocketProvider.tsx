@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import { socket } from '../lib/socket';
-import { SocketContext } from '../context/SocketContext';
+import React, { useEffect } from "react";
+import { socket } from "../lib/socket";
+import { SocketContext } from "../context/SocketContext";
 
 interface Props {
   children: React.ReactNode;
@@ -15,8 +15,6 @@ export const SocketProvider: React.FC<Props> = ({ children }) => {
   }, []);
 
   return (
-    <SocketContext.Provider value={socket}>
-      {children}
-    </SocketContext.Provider>
+    <SocketContext.Provider value={socket}>{children}</SocketContext.Provider>
   );
 };
